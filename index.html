@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<link rel="stylesheet" href="./assets/font/css/all.css" />
+		<title>XMusic Player</title>
+	</head>
+	<body>
+		<section class="wrapper">
+			<header>
+				<button class="btn">
+					<i class="fas fa-long-arrow-alt-left"></i>
+				</button>
+				<h3 class="p-now">Playing Now</h3>
+				<button class="btn">
+					<i class="fas fa-list"></i>
+				</button>
+			</header>
+
+			<div class="player">
+				<div class="img-area">
+					<img src="./assets/img/music-01.jpg" alt="" class="c-img" />
+				</div>
+				<div class="song-details">
+					<h3 class="name">
+						<i class="fas fa-music"></i> Different World
+					</h3>
+					<p class="artist">Alan Walker</p>
+				</div>
+				<div class="audio-controls">
+					<div class="song-timer">
+						<span class="current-time">0:00</span>
+						<span class="max-duration">0:00</span>
+					</div>
+					<div class="progress-area">
+						<div class="progress-bar">
+							<audio
+								src="./assets/audio/Alan_Walker_-_Different_World.mp3"
+								id="main-audio"></audio>
+						</div>
+					</div>
+				</div>
+				<div class="controls">
+					<button class="btns-controls btn b-btn" id="prev">
+						<i class="fas fa-backward"></i>
+					</button>
+					<button class="btns-controls play play-pause">
+						<i class="fas fa-play"></i>
+					</button>
+					<button class="btns-controls btn f-btn" id="next">
+						<i class="fas fa-forward"></i>
+					</button>
+				</div>
+
+				<div class="user">
+					XMusic Player <span class="me"> &copy; By Jensen Walker</span>
+				</div>
+			</div>
+		</section>
+		<script src="./assets/js/jquery-3.6.0.min.js"></script>
+		<script src="./assets/js/app-list-music.js"></script>
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>
